@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="160dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/mensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="134dp"
+                android:layout_height="172dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/vimagen"
+                app:srcCompat="@mipmap/androidstudio1"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="170dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="155dp"
+                android:layout_height="179dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/vimagen"
+                app:srcCompat="@mipmap/buho"
+                tools:layout_editor_absoluteX="184dp"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="147dp"
+                android:layout_height="143dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/vimagen"
+                app:srcCompat="@mipmap/facebook"
+                tools:layout_editor_absoluteX="50dp"
+                tools:layout_editor_absoluteY="323dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="146dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/vimagen"
+                app:srcCompat="@mipmap/linuxlogo"
+                tools:layout_editor_absoluteX="209dp"
+                tools:layout_editor_absoluteY="322dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mensajeboton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+</android.support.constraint.ConstraintLayout>
